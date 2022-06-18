@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-header__title{
+    font-size: 18px;
+}
+
+h2 ~ p{
+    color: red;
+}
+
+.main{
+    font-size: 20px;
+}
+
+.main div{
+    font-size: 2em;
+}
+
+.main p{
+    font-size: 2em;
+}
