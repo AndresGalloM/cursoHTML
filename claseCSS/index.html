@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- primero se debe ligar primero el archivo para celular y despues ligar los demas(Buenas practicas) -->
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="table.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 1000px)">
+
     <title>Document</title>
 </head>
 <body>
-    <header class="page-header">
-        <h1 id="page-title" class="page-header__title">Empresa</h1>
-        <nav><!--Metodologia de nomenclatura BEM-->
-            <ul id="main-nav" class="main-nav"> <!--Contenedor-->
-                <li><a href="">Inicio</a></li> <!--Elemendos-->
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Instructores</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
     </header>
 
-    <main class="main">
-        <span>main</span>
-        <div class="frame">
-            <span>div</span>
-            <p>parrafo</p>
-        </div>
+    <main>
+        <picture> <!--Va a renderizar la imagen depende de viwwport-->
+            <!-- Los meidas deben ir de manyor a menor -->
+            <source media="(min-width: 1300px)" srcset=".img/images.jpg">
+            <source media="(min-width: 1300px)" srcset=".img/images.jpg">
+            <img src="img/images.jpg" alt="Descripcion imagen"><!--Defaul-->
+        </picture>
     </main>
+
+    <div class="media">
+        <img src="" alt="">
+    </div>
 </body>
 </html>                 
