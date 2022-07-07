@@ -8,6 +8,7 @@ html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
     min-width: 300px;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -129,6 +130,10 @@ html{
     color: #757575;
 }
 
+.main-tables {
+    position: relative;
+}
+
 .main-tables__content-table {
     font-family: var(--font-inter);
 }
@@ -184,7 +189,7 @@ html{
     background-repeat: no-repeat;
 }
 
-.main-tables__updated{
+.main-tables__updated {
     padding: 8px;
     border-radius: 8px;
     background-color: var(--soft-orange);
@@ -194,4 +199,312 @@ html{
     font-size: 1.2rem;
     font-weight: 1.9rem;
     font-weight: var(--size-500);
+}
+
+.comisiones {
+    background: var(--soft-blue);
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-left {
+    left: -40px;
+}
+
+.arrow-right {
+    right: -40px;
+}
+
+.arrow-right button, .arrow-left button{
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    background-color: transparent;
+    background-image: url(./assets/icons/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.arrow-left button {
+    transform: rotate(180deg);
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 64px 16px 47px;
+    background: var(--black);
+    width: 100%;
+}
+
+.potatoe {
+    position: absolute;
+    top: -12px;
+    width: 41px;
+    height: 24px;
+}
+
+.potatoe span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url('./assets/icons/batata.svg');
+}
+
+.info__detail {
+    margin-block-end: 3.2rem;
+}
+
+.info__detail h2 {
+    margin-block-end: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: var(--size-700);
+    color: var(--just-white);
+}
+
+.info__detail p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+    color: #808080;
+}
+
+.container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.detail {
+    width: 100%;
+    padding: 1.6rem 2rem 2.2rem 1.6rem;
+    border-radius: 0.4rem;
+    background: var(--warm-black);
+    text-align: start;
+}
+
+.detail p:nth-of-type(1) {
+    margin-block: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-700);
+    color: var(--just-white);
+}
+
+.detail p:nth-of-type(2) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+    color: #808080;
+}
+
+.detail span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clock {
+    background-image: url('./assets/icons/clock.svg');
+}
+
+.eye {
+    background-image: url('./assets/icons/eye.svg');
+}
+
+.dollar {
+    background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.check {
+    background-image: url('./assets/icons/check-circle.svg');
+}
+
+
+.cripto-img {
+    width: 100%;
+    height: 387px;
+    background-image: url('./assets/img/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cripto-img h2 {
+    padding-block-start: 6.4rem;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 6.4rem 1.6rem;
+    background: #f6f6f6;
+}
+
+.plans__info {
+    margin-block-end: 5rem;
+}
+
+.plans__info h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: var(--size-700);
+    margin-block-end: 2.4rem;
+}
+
+.plans__info p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+    color: #757575;
+}
+
+.plan {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    border-radius: 8px;
+    padding: 31px 16px 24px 16px;
+    background: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.22);
+}
+
+.plan__info--title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+}
+
+.plan__info--price {
+    margin-block: 0.8rem;
+    font-family: var(--font-inter);
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: var(--size-700);
+    letter-spacing: -0.4rem;
+}
+
+.plan__info--price sup {
+    display: inline-block;
+    vertical-align: top;
+    margin-block-start: 0.8rem;
+    margin-inline-end: 5px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: var(--size-500);
+    letter-spacing: normal;
+    color: #363636;
+}
+
+.plan__info--detail {
+    margin-block-end: 1.6rem;
+    font-family: var(--font-inter);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: var(--size-500);
+    color: #757575;
+}
+
+.plan__info--button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: auto;
+    padding: 1.2rem 1.6rem;
+    border: 2px solid #F7931A;
+    border-radius: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-700);
+    background: var(--off-white);
+    color: var(--warm-black);
+    cursor: pointer;
+}
+
+.plan__info--button span {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.plan__recomendado {
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: var(--font-inter);
+    font-weight: var(--size-700);
+    background: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 4rem;
+    background: var(--bitcoin-orange);
+}
+
+.footer__link a {
+    display: block;
+    padding-block: 0.4rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+    color: var(--just-white);
+}   
+
+.footer__copy {
+    text-align: center;
+}
+
+.footer__copy .img {
+    display: inline-block;
+    width: 4rem;
+    height: 2.4rem;
+    background-image: url('./assets/img/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__copy p {
+    margin-block-start: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+    color: var(--soft-orange);
 }
